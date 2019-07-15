@@ -1,8 +1,16 @@
 package set;
 
+import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
 public class SetTest {
+
+    private Set set;
+
+    @Before
+    public void setUp(){
+        set = new Set();
+    }
 
     @Test
     public void shouldBeEmptyWhenCreated() {
@@ -21,7 +29,7 @@ public class SetTest {
 //    }
 //
 //    @Test
-//    public void shouldContainsAnElementWhenSomeElementWasAdded(){
+//    public void shouldContainsAnElementWhenThatElementWasAdded(){
 //    }
 //
 //    @Test
